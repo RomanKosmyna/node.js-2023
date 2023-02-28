@@ -22,9 +22,30 @@ const path = require('path');
 //     })
 // });
 
-fs.readdir(path.join('folder'), {withFileTypes: true}, (err, data) => {
-    if (err) throw new Error();
-    data.map(file => {
-        file.isFile() ? console.log(`File: ${file.name}`): console.log(`Folder: ${file.name}`)
-    })
-})
+// fs.readdir(path.join('folder'), {withFileTypes: true}, (err, data) => {
+//     if (err) throw new Error();
+//     data.map(file => {
+//         file.isFile() ? console.log(`File: ${file.name}`): console.log(`Folder: ${file.name}`)
+//     })
+// });
+//
+// fs.truncate(path.join(__dirname, 'folder', '3.txt'), () => {
+//
+// });
+//
+// fs.stat(path.join(__dirname, 'folder', '4.txt'), (err, stats) => {
+//     if (err) throw new Error();
+//     console.log(stats.isFile());
+// })
+
+// fs.appendFile(path.join(__dirname, 'folder', '3.txt'), 'Hello World!', () => {
+//
+// })
+//
+// fs.mkdir(path.join(__dirname, 'tester'), () => {
+//
+// })
+
+// fs.rmdir(path.join(__dirname, 'tester'), () => {
+//
+// })
