@@ -208,7 +208,7 @@ app.delete('/users/:userId', async (req, res) => {
 
     users.splice(index, 1);
     await fsService.writer(users);
-
+    // console.log()
     res.sendStatus(204);
 })
 
